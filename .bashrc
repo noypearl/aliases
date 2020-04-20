@@ -3,7 +3,9 @@ alias dockershell=docker run --rm -i -t --entrypoint=/bin/bash
 alias dockershellsh=docker run --rm -i -t --entrypoint=/bin/sh
 alias l=ls
 alias ll=ls -lsa
-mobsf=docker run -it -d --name mobsf -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+alias mobsf=docker run -it -d --name mobsf -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+alias msf=docker run --rm -it metasploitframework/metasploit-framework ./msfconsole
+alias ..=cd ../
 
 # Functions
 function push()
